@@ -5,3 +5,6 @@ if (strawberryCount > 9) {
 } else {
     document.write("Sorry, we do not ship orders that small.")
 }
+
+let testValue = false
+
