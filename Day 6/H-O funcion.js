@@ -1,5 +1,5 @@
-document.addEventListener("click", ourAmazingFunction)
-
-function ourAmazingFunction() {
-  alert("Thank you for clicking.")
+function doubleMe(x) {
+    return x * 2
 }
+
+document.write(doubleMe(20))
