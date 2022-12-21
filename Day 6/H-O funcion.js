@@ -1,5 +1,9 @@
-function doubleMe(x) {
-    return x * 2
+function createMultiplier(multiplier) {
+    return function(x) {
+        return x * multiplier
+    }
 }
 
-document.write(doubleMe(20))
+let doubleMe = createMultiplier(2)
+let tripleMe = createMultiplier(3)
+let quadrupleMe = createMultiplier(4)
