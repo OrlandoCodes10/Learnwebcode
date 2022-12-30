@@ -11,3 +11,9 @@ let John = {
 }
 
 John.driveCar()
+
+function breathe() {
+    console.log(this.firstName + " " + this.lastName + " just inhaled and exhaled.")
+}
+
+breathe.call(john)
