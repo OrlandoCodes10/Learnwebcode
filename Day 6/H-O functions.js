@@ -7,3 +7,5 @@ function createMultiplier(multiplier) {
 let doubleMe = createMultiplier(2)
 let tripleMe = createMultiplier(3)
 let quadrupleMe = createMultiplier(4)
+
+document.write(tripleMe(5))
