@@ -17,4 +17,12 @@ function onlyDogs(x) {
     return x.species == "dog"
 }
 
-console.log(dogs)
+function onlyBabies(x) {
+    return x.age < 3
+}
+
+let babyDogNames = pets.filter(onlyDogs).filter(onlyBabies).map(nameOnly)
+
+console.log(babyDogNames)
+
+
