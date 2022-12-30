@@ -1,0 +1,13 @@
+let John = {
+    firstName: "John",
+    lastName: "Doe",
+    driveCar() {
+        function imAFunctionNotAMethod() {
+            console.log(this)
+        }
+        imAFunctionNotAMethod()
+        console.log(this.firstName + " " + this.lastName + " is driving a car.")
+    }
+}
+
+John.driveCar()
