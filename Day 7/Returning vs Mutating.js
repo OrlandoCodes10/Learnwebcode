@@ -11,4 +11,10 @@ function nameOnly(x) {
     return x.name
 }
 
-console.log(ourTest)
+let dogs = pets.filter(onlyDogs)
+
+function onlyDogs(x) {
+    return x.species == "dog"
+}
+
+console.log(dogs)
