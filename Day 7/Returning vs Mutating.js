@@ -4,3 +4,7 @@ let pets = [
     {name: "Purrsloud", species: "cat", age: 8},
 ]
 
+console.log(pets.push({name: "Puppster", species: "dog", age: 1}))
+pets.map(nameOnly)
+
+function nameOnly()
