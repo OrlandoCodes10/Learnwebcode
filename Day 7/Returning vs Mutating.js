@@ -5,6 +5,10 @@ let pets = [
 ]
 
 console.log(pets.push({name: "Puppster", species: "dog", age: 1}))
-pets.map(nameOnly)
+let ourTest = pets.map(nameOnly)
 
-function nameOnly()
+function nameOnly(x) {
+    return x.name
+}
+
+console.log(ourTest)
