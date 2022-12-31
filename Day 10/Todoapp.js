@@ -4,9 +4,10 @@ let ourList = document.getElementById("ourList")
 
 ourForm.addEventListener("submit", (e) => {
     e.preventDefault()
-    console.log(ourField.value)
+    createItem(ourField.value)
 })
 
 function createItem(x) {
-    ourList.insertAdjacentHTML("beforeend", x)
+    let ourHTML = `<li>${x}<button>Delete</button></li>`
+    ourList.insertAdjacentHTML("beforeend", ourHTML)
 }
